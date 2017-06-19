@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Nathaniel Tomasetti</title>
-    <link>ntomasetti.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; [Nathaniel Tomasetti](ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="ntomasetti.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bayes</title>
-      <link>ntomasetti.github.io/tags/bayes/</link>
+      <link>/tags/bayes/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>ntomasetti.github.io/tags/bayes/</guid>
+      <guid>/tags/bayes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posterior</title>
-      <link>ntomasetti.github.io/tags/posterior/</link>
+      <link>/tags/posterior/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>ntomasetti.github.io/tags/posterior/</guid>
+      <guid>/tags/posterior/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>ntomasetti.github.io/tags/shiny/</link>
+      <link>/tags/shiny/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>ntomasetti.github.io/tags/shiny/</guid>
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     

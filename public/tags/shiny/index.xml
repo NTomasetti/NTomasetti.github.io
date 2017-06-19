@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shiny on Nathaniel Tomasetti</title>
-    <link>ntomasetti.github.io/tags/shiny/</link>
+    <link>/tags/shiny/</link>
     <description>Recent content in Shiny on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; [Nathaniel Tomasetti](ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="ntomasetti.github.io/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bayesian Statistics</title>
-      <link>ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</link>
+      <link>/post/2015/07/23/bayesian-statistics/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</guid>
+      <guid>/post/2015/07/23/bayesian-statistics/</guid>
       <description>What is Bayesian Statistics? This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
