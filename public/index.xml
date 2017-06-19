@@ -6,7 +6,7 @@
     <description>Recent content on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; [Nathaniel Tomasetti](https://ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
+    <copyright>[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
     <lastBuildDate>Mon, 19 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ntomasetti.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -23,12 +23,12 @@ I&amp;rsquo;m also teaching Statistical Methods for Insurance, and Financial Eco
     </item>
     
     <item>
-      <title></title>
-      <link>https://ntomasetti.github.io/post/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Bayesian Statistics</title>
+      <link>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://ntomasetti.github.io/post/1/01/01/</guid>
-      <description>Bayesian Statistics       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
+      <guid>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</guid>
+      <description>What is this all about? Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us express a change in belief as more data (or dice rolls) are observed using probability, the mathematical language of uncertainty.</description>
     </item>
     
   </channel>

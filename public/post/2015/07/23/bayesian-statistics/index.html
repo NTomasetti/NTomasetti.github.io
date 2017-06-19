@@ -31,11 +31,11 @@
 </div>
 
 <main>
-<div id="what-is-this-all-about" class="section level1">
+<div id="section-what-is-this-all-about" class="section level1">
 <h1>What is this all about?</h1>
 <p>Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us express a change in belief as more data (or dice rolls) are observed using probability, the mathematical language of uncertainty.</p>
 </div>
-<div id="a-few-preliminaries" class="section level1">
+<div id="section-a-few-preliminaries" class="section level1">
 <h1>A few preliminaries</h1>
 <p><span class="math inline">\(y\)</span> is the observed data, which can be anything.</p>
 <p><span class="math inline">\(\theta\)</span> is some unknown parameter that determines the kind of values <span class="math inline">\(y\)</span> takes. <span class="math inline">\(\theta\)</span> might be the population mean of <span class="math inline">\(y\)</span>.</p>
@@ -44,7 +44,7 @@
 <p><span class="math inline">\(p(y)\)</span> is the marginal probability distribution of <span class="math inline">\(y\)</span>, we don’t know this and it causes all kinds of problems.</p>
 <p><span class="math inline">\(p(\theta | y)\)</span> is the posterior distribution, and what we’re interested in. It describes what we know about <span class="math inline">\(\theta\)</span> after observing some data <span class="math inline">\(y\)</span> that is (hopefully) related to <span class="math inline">\(\theta\)</span>.</p>
 </div>
-<div id="bayes-rule" class="section level1">
+<div id="section-bayes-rule" class="section level1">
 <h1>Bayes Rule</h1>
 <p>Bayes rule is very simple and describes a mathematical relationship between <span class="math inline">\(p(\theta | y), p(y), p(\theta)\)</span> and <span class="math inline">\(p(y | \theta)\)</span>. It says that</p>
 <p><span class="math display">\[p(\theta | y) = \frac{p(y | \theta) p (\theta)}{p(y)}.\]</span></p>
@@ -52,11 +52,10 @@
 <p><span class="math display">\[p(\theta | y) = \frac{p(y | \theta) p (\theta)}{\int_{\theta} p(y | \theta) p (\theta) d\theta}.\]</span></p>
 <p>Sometimes the integral in the fraction is easy, and we can find <span class="math inline">\(p(\theta | y)\)</span> by hand. Sometimes it’s impossible to solve the integral by hand, but a computer can figure it out with enough time. If there’s enough unknown things grouped into <span class="math inline">\(\theta\)</span>, it could take the fastest computer available millions of years to solve the integral - this isn’t going to be a good idea so much of bayesian research focuses on finding ways to get the posterior without direct integration. But let’s look at an easy example.</p>
 </div>
-<div id="the-normal---unknown-mean-problem." class="section level1">
+<div id="section-the-normal---unknown-mean-problem." class="section level1">
 <h1>The Normal - Unknown Mean Problem.</h1>
-<ul>
-<li>Let <span class="math inline">\(y \sim \mathcal{N}(\theta, 1)\)</span>, so <span class="math inline">\(p(y | \theta)\)</span> describes a normal distribution with a mean of <span class="math inline">\(\theta\)</span>, and a variance of one.</li>
-</ul>
+<p><a href="ntomasetti/shinyapps.io/bayesintro">Here is a link</a> to an interactive demonstration of how data can update the prior to create the posterior. In this case, <span class="math inline">\(y \sim \mathcal{N}(\theta, 1)\)</span> and <span class="math inline">\(\theta \sim \mathcal{N}(\mu, \sigma^2)\)</span>. That is, <span class="math inline">\(p(y |\theta)\)</span> describes a normal distribution with an unknown mean <span class="math inline">\(\theta\)</span> and a known variance equal to one, and <span class="math inline">\(p(\theta)\)</span> also describes a normal distribution with prior mean <span class="math inline">\(\mu\)</span> and prior variance <span class="math inline">\(\sigma^2\)</span>. You can pick any value for the true value of <span class="math inline">\(\theta\)</span>, and the two prior parameters, so long as <span class="math inline">\(\sigma^2_{\theta}\)</span> is positive.</p>
+<p>The mean of the sample of <span class="math inline">\(y\)</span> is the black line, the prior distribution is in red, and the posterior distribution is in blue. See how the posterior distribution is narrower than the prior distribution and is usually close to the mean of the sample. This reflects how the information in the observed sample has allowed us to create a typically more accuracte estimate of unknown actual value of <span class="math inline">\(\theta\)</span>.</p>
 </div>
 
 </main>
@@ -65,7 +64,7 @@
   
   
   <hr/>
-  &copy; <a href="https://ntomasetti.github.io">Nathaniel Tomasetti</a> 2017 |<a href="https://github.com/NTomasetti">Github</a> | <a href="https://www.linkedin.com/in/nathanieltomasetti/">LinkedIn</a>
+  <a href="https://github.com/NTomasetti">Github</a> | <a href="https://www.linkedin.com/in/nathanieltomasetti/">LinkedIn</a>
   
   </footer>
   </body>

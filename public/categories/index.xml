@@ -6,10 +6,20 @@
     <description>Recent content in Categories on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; [Nathaniel Tomasetti](https://ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
+    <copyright>[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://ntomasetti.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bayes</title>
+      <link>https://ntomasetti.github.io/categories/bayes/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://ntomasetti.github.io/categories/bayes/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
