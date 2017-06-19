@@ -2,35 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nathaniel Tomasetti</title>
-    <link>/</link>
+    <link>https://ntomasetti.github.io/</link>
     <description>Recent content on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; [Nathaniel Tomasetti](ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
+    <copyright>&amp;copy; [Nathaniel Tomasetti](https://ntomasetti.github.io) 2017 |[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
     <lastBuildDate>Mon, 19 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ntomasetti.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://ntomasetti.github.io/about/</link>
       <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://ntomasetti.github.io/about/</guid>
       <description>Hi, I&amp;rsquo;m a PhD Candidate with the Department of Econometrics and Business Statistics in Monash Univerisity. I&amp;rsquo;m working with Catherine Forbes and Anastasios Panagiotelis to develop fast algorithms to update forecasts as more data is observed. For more details, see my research page.
 I&amp;rsquo;m also teaching Statistical Methods for Insurance, and Financial Econometrics at Monash, and I&amp;rsquo;ll add more details for these subjects throughout the next two semesters as the classes progress.</description>
     </item>
     
     <item>
       <title>Bayesian Statistics</title>
-      <link>/post/2015/07/23/bayesian-statistics/</link>
+      <link>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/2015/07/23/bayesian-statistics/</guid>
-      <description>What is Bayesian Statistics? This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+      <guid>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</guid>
+      <description>What is this all about? Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us mathematically express a change in belief as more data (or dice rolls) are observed.</description>
     </item>
     
   </channel>
