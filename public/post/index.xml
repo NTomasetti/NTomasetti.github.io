@@ -18,7 +18,7 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</guid>
-      <description>What is this all about? Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us mathematically express a change in belief as more data (or dice rolls) are observed.</description>
+      <description>What is this all about? Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us express a change in belief as more data (or dice rolls) are observed using probability, the mathematical language of uncertainty.</description>
     </item>
     
   </channel>

@@ -33,26 +33,30 @@
 <main>
 <div id="what-is-this-all-about" class="section level1">
 <h1>What is this all about?</h1>
-<p>Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us mathematically express a change in belief as more data (or dice rolls) are observed.</p>
-<p>Bayesian Statistics is a tool that lets us write This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<p>Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us express a change in belief as more data (or dice rolls) are observed using probability, the mathematical language of uncertainty.</p>
+</div>
+<div id="a-few-preliminaries" class="section level1">
+<h1>A few preliminaries</h1>
+<p><span class="math inline">\(y\)</span> is the observed data, which can be anything.</p>
+<p><span class="math inline">\(\theta\)</span> is some unknown parameter that determines the kind of values <span class="math inline">\(y\)</span> takes. <span class="math inline">\(\theta\)</span> might be the population mean of <span class="math inline">\(y\)</span>.</p>
+<p><span class="math inline">\(p(\theta)\)</span> is the prior probability distribution, it tells us what we know about <span class="math inline">\(\theta\)</span> before observing data. We might not know anything about the mean of <span class="math inline">\(y\)</span> before seeing <span class="math inline">\(y\)</span>, but if we know something from theory, intuition or a previous experiment it can be included in the prior.</p>
+<p><span class="math inline">\(p(y | \theta)\)</span> is the conditional distribution of <span class="math inline">\(y\)</span>, it describes the range of values <span class="math inline">\(y\)</span> can take for a given value of theta. <span class="math inline">\(p(y | \theta = 5)\)</span> could describe a probability distribution with most observations close to five.</p>
+<p><span class="math inline">\(p(y)\)</span> is the marginal probability distribution of <span class="math inline">\(y\)</span>, we don’t know this and it causes all kinds of problems.</p>
+<p><span class="math inline">\(p(\theta | y)\)</span> is the posterior distribution, and what we’re interested in. It describes what we know about <span class="math inline">\(\theta\)</span> after observing some data <span class="math inline">\(y\)</span> that is (hopefully) related to <span class="math inline">\(\theta\)</span>.</p>
+</div>
+<div id="bayes-rule" class="section level1">
+<h1>Bayes Rule</h1>
+<p>Bayes rule is very simple and describes a mathematical relationship between <span class="math inline">\(p(\theta | y), p(y), p(\theta)\)</span> and <span class="math inline">\(p(y | \theta)\)</span>. It says that</p>
+<p><span class="math display">\[p(\theta | y) = \frac{p(y | \theta) p (\theta)}{p(y)}.\]</span></p>
+<p>Remember, we don’t know <span class="math inline">\(p(y)\)</span>, but we do know that all probability distributions integrate to one. This fact and a bit of maths gives</p>
+<p><span class="math display">\[p(\theta | y) = \frac{p(y | \theta) p (\theta)}{\int_{\theta} p(y | \theta) p (\theta) d\theta}.\]</span></p>
+<p>Sometimes the integral in the fraction is easy, and we can find <span class="math inline">\(p(\theta | y)\)</span> by hand. Sometimes it’s impossible to solve the integral by hand, but a computer can figure it out with enough time. If there’s enough unknown things grouped into <span class="math inline">\(\theta\)</span>, it could take the fastest computer available millions of years to solve the integral - this isn’t going to be a good idea so much of bayesian research focuses on finding ways to get the posterior without direct integration. But let’s look at an easy example.</p>
+</div>
+<div id="the-normal---unknown-mean-problem." class="section level1">
+<h1>The Normal - Unknown Mean Problem.</h1>
+<ul>
+<li>Let <span class="math inline">\(y \sim \mathcal{N}(\theta, 1)\)</span>, so <span class="math inline">\(p(y | \theta)\)</span> describes a normal distribution with a mean of <span class="math inline">\(\theta\)</span>, and a variance of one.</li>
+</ul>
 </div>
 
 </main>
