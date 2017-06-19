@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
+    <title>Nathaniel Tomasetti</title>
     <link>/</link>
-    <description>Recent content on A Hugo website</description>
+    <description>Recent content on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi, I&amp;rsquo;m a PhD Candidate with the Department of Econometrics and Business Statistics in Monash Univerisity. I&amp;rsquo;m working with Catherine Forbes and Anastasios Panagiotelis to develop fast algorithms to update forecasts as more data is observed. For more details, see my research page.
+I&amp;rsquo;m also teaching Statistical Methods for Insurance, and Financial Econometrics at Monash, and I&amp;rsquo;ll add more details for these subjects throughout the next two semesters as the classes progress.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/teaching/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/</guid>
+      <description>Hi, I&amp;rsquo;m a PhD Candidate with the Department of Econometrics and Business Statistics in Monash Univerisity. I&amp;rsquo;m working with Catherine Forbes and Anastasios Panagiotelis to develop fast algorithms to update forecasts as more data is observed. For more details, see my research page.
+I&amp;rsquo;m also teaching Statistical Methods for Insurance, and Financial Econometrics at Monash, and I&amp;rsquo;ll add more details for these subjects throughout the next two semesters as the classes progress.</description>
+    </item>
+    
+    <item>
+      <title>Resaerch</title>
+      <link>/research/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/research/</guid>
+      <description>Bayesian Statistics is pretty great.</description>
+    </item>
     
     <item>
       <title>A Plain Markdown Post</title>
@@ -19,15 +48,6 @@
       <guid>/2016/12/30/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
  You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
     <item>
