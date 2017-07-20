@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayes on Nathaniel Tomasetti</title>
-    <link>https://ntomasetti.github.io/tags/bayes/</link>
+    <link>/tags/bayes/</link>
     <description>Recent content in Bayes on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="https://ntomasetti.github.io/tags/bayes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/bayes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bayesian Statistics</title>
-      <link>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</link>
+      <link>/post/2015/07/23/bayesian-statistics/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://ntomasetti.github.io/post/2015/07/23/bayesian-statistics/</guid>
+      <guid>/post/2015/07/23/bayesian-statistics/</guid>
       <description>What is this all about? Imagine playing a game where your opponent has a rigged dice, before the game starts you probably think that every side is equally likely to be rolled, but after they roll several sixes in a row you might begin to think that something’s wrong. Bayesian statistics is a tool that lets us express a change in belief as more data (or dice rolls) are observed using probability, the mathematical language of uncertainty.</description>
     </item>
     

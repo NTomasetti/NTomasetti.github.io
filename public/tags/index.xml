@@ -6,38 +6,10 @@
     <description>Recent content in Tags on Nathaniel Tomasetti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>[Github](https://github.com/NTomasetti) | [LinkedIn](https://www.linkedin.com/in/nathanieltomasetti/)</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <copyright>[Github](https://github.com/NTomasetti)</copyright>
     
 	<atom:link href="https://ntomasetti.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bayes</title>
-      <link>https://ntomasetti.github.io/tags/bayes/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://ntomasetti.github.io/tags/bayes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Posterior</title>
-      <link>https://ntomasetti.github.io/tags/posterior/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://ntomasetti.github.io/tags/posterior/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shiny</title>
-      <link>https://ntomasetti.github.io/tags/shiny/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://ntomasetti.github.io/tags/shiny/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
