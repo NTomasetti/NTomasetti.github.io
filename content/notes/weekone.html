@@ -21,17 +21,29 @@ class: center, middle, inverse, title-slide
 --
 R is a programming language
 
+--
+
 -It works with **objects** and **functions**.
 
--It can be made to do almost any mathematical operation to data. 
-
--It easily allows people to create their own functions and share them with the world.
+--
 
 -Its basic functions are similar to what you can do in Excel.
 
--Its advanced functions make it both extremely powerful and widely used.
+--
 
--It is free and available on any operating system.
+-But it has almost every statistical and data analytics tool available.
+
+--
+
+-It easily allows people to create their own functions and share them with the world.
+
+--
+
+-It is free, available on any operating system and growing in popularity in business.
+
+--
+
+-It can be hard to learn at first, but it gets easier the more you use it.
 
 ---
 
@@ -40,11 +52,11 @@ class:middle, inverse, center
 
 ---
 
-Objects allow things to be created and stored
+Objects allow things to be created and stored.
 
 --
 
-They can be variables
+They can be variables,
 
 ```r
 x = 5
@@ -56,11 +68,10 @@ x + 1
 ```
 --
 
-They can be vectors, or matrices
+or they can be vectors, matrices, and entire datasets.
 
 ```r
 y = c(1, 4, 2, 6, 5, 0)
-z = matrix(y, nrow = 2, ncol = 3)
 y
 ```
 
@@ -69,6 +80,7 @@ y
 ```
 
 ```r
+z = matrix(y, nrow = 2, ncol = 3)
 z
 ```
 
@@ -79,43 +91,17 @@ z
 ```
 --
 
-An object can even by an entire dataset!
+An object can be almost everything!
+
 
 ---
 
-Datasets are usually too big to look at all at once. But we can look at parts of it easily
-
-
-```r
-head(mtcars)
-```
-
-```
-##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
-## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
-## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
-## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
-## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
-## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
-## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
-```
-
---
-
-Or a summary, or the structure
-
-```r
-summary(mtcars)
-str(mtcars)
-```
-
----
 class:middle, inverse, center
 #Functions in R
 
 ---
 
-Functions are a set of instructions to turn an input into an output
+Functions are a set of instructions to turn an input into an output.
 
 
 ```r
@@ -134,7 +120,7 @@ myMean(x)
 
 --
 
-It's easy to give them multiple inputs
+It's easy to give them multiple inputs.
 
 
 ```r
@@ -153,6 +139,7 @@ addAndDouble(5, 2)
 R comes with many built in functions
 
 ```r
+x = c(4, 1, 6, -3, 7, 1)
 mean(x)
 ```
 
@@ -162,11 +149,11 @@ mean(x)
 --
 
 ```r
-median(x)
+max(x)
 ```
 
 ```
-## [1] 2.5
+## [1] 7
 ```
 --
 
@@ -180,20 +167,20 @@ sd(x)
 --
 
 ```r
-var(x)
-```
-
-```
-## [1] 13.86667
-```
---
-
-```r
 cor(x, c(0, -5, 1, 3, 11, 2))
 ```
 
 ```
 ## [1] 0.4016281
+```
+--
+
+```r
+sort(x)
+```
+
+```
+## [1] -3  1  1  4  6  7
 ```
 
 ---
@@ -203,7 +190,7 @@ R can do all of the regression you would do in eViews, Excel, Stata, SAS etc.
 
 ```r
 x = rnorm(1000)
-y = 2 + 3 * x + rnorm(1000, sd = 0.1)
+y = 2 + 3*x + rnorm(1000, sd = 0.1)
 linReg = lm(y ~ x)
 summary(linReg)
 ```
@@ -215,48 +202,84 @@ summary(linReg)
 ## 
 ## Residuals:
 ##      Min       1Q   Median       3Q      Max 
-## -0.31767 -0.07089 -0.00064  0.06962  0.33480 
+## -0.33829 -0.07126  0.00277  0.06756  0.34045 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept) 1.998494   0.003150   634.5   &lt;2e-16 ***
-## x           3.001514   0.003262   920.1   &lt;2e-16 ***
+## (Intercept) 1.999366   0.003185   627.8   &lt;2e-16 ***
+## x           2.995993   0.003112   962.8   &lt;2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 0.09959 on 998 degrees of freedom
-## Multiple R-squared:  0.9988,	Adjusted R-squared:  0.9988 
-## F-statistic: 8.467e+05 on 1 and 998 DF,  p-value: &lt; 2.2e-16
+## Residual standard error: 0.1007 on 998 degrees of freedom
+## Multiple R-squared:  0.9989,	Adjusted R-squared:  0.9989 
+## F-statistic: 9.269e+05 on 1 and 998 DF,  p-value: &lt; 2.2e-16
 ```
 
 ---
+class: middle, inverse, center
 
-If R can't do something, someone has probably written a function to do it.
+#Packages and Datasets
+
+---
+
+There are thousands of packages people have written with extra functions and data.
+
+The dataset economics is part of the ggplot2 package and the function glimpse is part of the dplyr package. Install these once per computer.
 
 
 ```r
-ggplot() + geom_point(aes(x, y))
+install.packages("ggplot2")
+install.packages("dplyr")
 ```
 
-The function ggplot() is part of the ggplot2 package. Install it once per computer
+--
 
-
-```r
-installed.packages("ggplot2")
-```
-
-Then use library(ggplot2) in your code and R can use ggplot2 functions until the next time you start R.
+Then use library(ggplot2) and library(dplyr) to load their contents into R.
 
 
 ```r
 library(ggplot2)
-ggplot() + geom_point(aes(x, y))
+library(dplyr)
+data(economics, package="ggplot2")
 ```
 
+--
+
+Now we have access to everything in dplyr and ggplot2 until you close R!
 ---
 
-class: middle, center
-![](weekone_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+
+
+Now we can look at this economics data
+
+
+```r
+glimpse(economics)
+```
+
+```
+## Observations: 574
+## Variables: 6
+## $ date     &lt;date&gt; 1967-07-01, 1967-08-01, 1967-09-01, 1967-10-01, 1967...
+## $ pce      &lt;dbl&gt; 507.4, 510.5, 516.3, 512.9, 518.1, 525.8, 531.5, 534....
+## $ pop      &lt;int&gt; 198712, 198911, 199113, 199311, 199498, 199657, 19980...
+## $ psavert  &lt;dbl&gt; 12.5, 12.5, 11.7, 12.5, 12.5, 12.1, 11.7, 12.2, 11.6,...
+## $ uempmed  &lt;dbl&gt; 4.5, 4.7, 4.6, 4.9, 4.7, 4.8, 5.1, 4.5, 4.1, 4.6, 4.4...
+## $ unemploy &lt;int&gt; 2944, 2945, 2958, 3143, 3066, 3018, 2878, 3001, 2877,...
+```
+
+Alternatively, you can use any of these to get an idea about what the dataset looks like
+
+
+```r
+head(economics)
+tail(economics)
+summary(economics)
+str(economics)
+hist(economics$pce)
+plot(economics$date, economics$pop)
+```
 
 ---
 
@@ -268,11 +291,9 @@ If you're ever stuck on how to use a function, you can get help with ?
 ?ggplot
 ```
 
-There's also tonnes of online resources, just google R and the function name. 
 
---
+There's also tonnes of online resources available,
 
-Alternatively,
 
 - https://stackoverflow.com/ is a great resource for programming help
 
