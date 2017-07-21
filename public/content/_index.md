@@ -1,5 +1,5 @@
 ---
-title: ETC2420
+title: ETC2420/5242 - Statistical Thinking
 ---
 <hr>
 
