@@ -3,7 +3,8 @@ title: ETC2420
 ---
 <hr>
 
-|    Tutorial Notes      | Groups   |      |
-|:-----------------------|:--------:|:-----:|
-|[Week One](../content/weekone/notes.html)| [1:00 pm](../content/weekone/group1.html) |[2:30 pm](../content/weekone/group2.html) |
+| Week  | Exercises |  | Tutorial Notes    | Group List   | 
+|:---------|----:|---:|-------:|--------:|
+|<b>Week One</b> | [Webpage](http://st.netlify.com/labs/lab1)   |  [.Rmd](http://st.netlify.com/labs/lab1.Rmd)   | [Introduction to R](../content/weekone/notes.html)| [Week One Groups](../content/weekone/groups.html) |
 
+  
