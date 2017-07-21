@@ -1,0 +1,188 @@
+---
+title: "Introduction to R"
+author: "Nathaniel Tomasetti"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+
+---
+
+# What is R?
+
+--
+R is a programming language
+
+-It works with **objects** and **functions**.
+
+-It can be made to do almost any mathematical operation to data. 
+
+-It easily allows people to create their own functions and share them with the world.
+
+-Its basic functions are similar to what you can do in Excel.
+
+-Its advanced functions make it both extremely powerful and widely used.
+
+-It is free and available on any operating system.
+
+---
+
+class:middle, inverse, center
+# Objects in R
+
+---
+
+Objects allow things to be created and stored
+
+--
+
+They can be variables
+```{r}
+x = 5
+x + 1
+```
+--
+
+They can be vectors, or matrices
+```{r}
+y = c(1, 4, 2, 6, 5, 0)
+z = matrix(y, nrow = 2, ncol = 3)
+y
+z
+```
+--
+
+An object can even by an entire dataset!
+
+---
+
+Datasets are usually too big to look at all at once. But we can look at parts of it easily
+
+```{r}
+head(mtcars)
+```
+
+--
+
+Or a summary, or the structure
+```{r, eval=FALSE}
+summary(mtcars)
+str(mtcars)
+```
+
+---
+class:middle, inverse, center
+#Functions in R
+
+---
+
+Functions are a set of instructions to turn an input into an output
+
+```{r}
+myMean = function(x){
+  N = length(x)
+  mean = sum(x) / N
+  return(mean)
+}
+x = c(4, 1, 6, -3, 7, 1)
+myMean(x)
+```
+
+--
+
+It's easy to give them multiple inputs
+
+```{r}
+addAndDouble = function(x, y){
+  2 * (x + y)
+}
+addAndDouble(5, 2)
+```
+
+---
+
+R comes with many built in functions
+```{r}
+mean(x)
+```
+--
+```{r}
+median(x)
+```
+--
+```{r}
+sd(x)
+```
+--
+```{r}
+var(x)
+```
+--
+```{r}
+cor(x, c(0, -5, 1, 3, 11, 2))
+```
+
+---
+
+R can do all of the regression you would do in eViews, Excel, Stata, SAS etc.
+
+```{r}
+x = rnorm(1000)
+y = 2 + 3 * x + rnorm(1000, sd = 0.1)
+linReg = lm(y ~ x)
+summary(linReg)
+```
+
+---
+
+If R can't do something, someone has probably written a function to do it.
+
+```{r, eval=FALSE}
+ggplot() + geom_point(aes(x, y))
+```
+
+The function ggplot() is part of the ggplot2 package. Install it once per computer
+
+```{r, eval=FALSE}
+installed.packages("ggplot2")
+```
+
+Then use library(ggplot2) in your code and R can use ggplot2 functions until the next time you start R.
+
+```{r, eval=FALSE}
+library(ggplot2)
+ggplot() + geom_point(aes(x, y))
+```
+
+---
+
+class: middle, center
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot() + geom_point(aes(x, y))
+```
+
+---
+
+If you're ever stuck on how to use a function, you can get help with ?
+
+```{r, eval=FALSE}
+?mean
+?ggplot
+```
+
+
+-- 
+
+There's also tonnes of online resources available,
+
+
+- https://stackoverflow.com/ is a great resource for programming help
+
+- https://cran.r-project.org/ has documentation on almost every function
+
+- https://www.datacamp.com/ has nice interactive courses on learning R.
+
