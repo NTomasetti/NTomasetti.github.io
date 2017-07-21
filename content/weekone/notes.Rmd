@@ -13,30 +13,17 @@ output:
 
 # What is R?
 
---
 R is a programming language
-
---
 
 -It works with **objects** and **functions**.
 
---
-
 -Its basic functions are similar to what you can do in Excel.
-
---
 
 -But it has almost every statistical and data analytics tool available.
 
---
-
 -It easily allows people to create their own functions and share them with the world.
 
---
-
 -It is free, available on any operating system and growing in popularity in business.
-
---
 
 -It can be hard to learn at first, but it gets easier the more you use it.
 
