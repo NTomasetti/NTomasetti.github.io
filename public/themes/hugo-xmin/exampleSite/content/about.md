@@ -41,11 +41,13 @@ You can define the menu through `menu.main`, e.g.,
     url = "/index.xml"
 ```
 
-The page footer can be defined in `.Params.copyright`, and the text is treated as Markdown, e.g.,
+Alternatively, you can add `menu: main` to the YAML metadata of any of your pages, so that these pages will appear in the menu.
+
+The page footer can be defined in `.Params.footer`, and the text is treated as Markdown, e.g.,
 
 ```
 [params]
-    copyright = "&copy; [Yihui Xie](https://yihui.name) 2017"
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017"
 ```
 
 # Custom layouts
@@ -53,24 +55,34 @@ The page footer can be defined in `.Params.copyright`, and the text is treated a
 There are two layout files under `layouts/partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/partials/foot_custom.html` to support LaTeX math via MathJax and center images automatically:
 
 ```html
-<script src="https://yihui.name/js/math-code.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
+<script src="//yihui.name/js/math-code.js"></script>
 <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script async src="https://yihui.name/js/center-img.js"></script>
+<script async src="//yihui.name/js/center-img.js"></script>
 ```
 
 You can certainly enable highlight.js for syntax highlighting by yourself through `head_custom.html` and `foot_custom.html` if you want.
 
 If you do not like the default fonts (e.g., `Palatino`), you may provide your own `static/css/fonts.css` under the root directory of your website to override the `fonts.css` in the theme.
+
+# Other features
+
+I could have added more features to this theme, but I decided not to, since I have no intention to make this theme feature-rich. However, I will teach you how. I have prepared several examples via pull requests at https://github.com/yihui/hugo-xmin/pulls, so that you can see the implementations of these features when you check out the diffs in the pull requests. For example, you can:
+
+- [Enable Google Analytics](https://github.com/yihui/hugo-xmin/pull/3)
+
+- [Enable Disqus comments](https://github.com/yihui/hugo-xmin/pull/4)
+
+- [Enable highlight.js for syntax highlighting of code blocks](https://github.com/yihui/hugo-xmin/pull/5)
+
+- [Display categories and tags on a page](https://github.com/yihui/hugo-xmin/pull/2)
+
+- [Add a table of contents](https://github.com/yihui/hugo-xmin/pull/7)
+
+- [Add a link in the footer of each page to "Edit this page" on Github](https://github.com/yihui/hugo-xmin/pull/6)
+
+To fully understand these examples, you have to read [the section on Hugo templates](https://bookdown.org/yihui/blogdown/templates.html) in the **blogdown** book.
 
 # Design philosophy
 
@@ -86,4 +98,4 @@ Compared to inconsistencies across browsers, I care much more about these proper
 - An image should be centered if it is the only child element of a paragraph.
 - The `max-width` of images, videos, and iframes should be `100%`.
 
-I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-mini). Happy hacking!
+I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-xmin). Happy hacking!
