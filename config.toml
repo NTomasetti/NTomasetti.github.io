@@ -1,10 +1,10 @@
-baseurl = "https://ntomasetti.github.io"
+baseurl = "https://ntomasetti.github.io/"
 languageCode = "en-us"
 title = "Statistical Thinking Notes"
 theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
@@ -32,4 +32,4 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "A website built through Hugo and blogdown."
-    footer = "&copy; Nathaniel Tomasetti | [Github](https://github.com/NTomasetti)"
+    copyright = "&copy; Nathaniel Tomasetti | [Github](https://github.com/NTomasetti)"
