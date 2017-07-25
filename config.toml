@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://ntomasetti.github.io"
 languageCode = "en-us"
 title = "Statistical Thinking Notes"
 theme = "hugo-xmin"
