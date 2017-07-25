@@ -9,7 +9,7 @@ nathaniel.tomasetti@monash.edu
 
 E773, Menzies
 
-Consultation TBA
+Consultation: Monday 10-11, W1105
 
 <hr>
 
