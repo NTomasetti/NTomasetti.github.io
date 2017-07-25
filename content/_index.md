@@ -15,7 +15,7 @@ Consultation TBA
 
 | Week  | Exercises |  | Tutorial Notes    | Group List   | 
 |:---------|----:|---:|-------:|--------:|
-|<b>Week One</b> | [Webpage](http://st.netlify.com/labs/lab1)   |  [.Rmd](http://st.netlify.com/labs/lab1.Rmd)   | [Introduction to R](../content/weekone/notes.html)| [Week One Groups](../content/weekone/groups.html) |
+|<b>Week One</b> | [Webpage](http://st.netlify.com/labs/lab1)   |  [.Rmd](http://st.netlify.com/labs/lab1.Rmd)   | [Introduction to R](../static/weekone/notes)| [Week One Groups](../static/weekone/groups) |
 
 <hr>
   
