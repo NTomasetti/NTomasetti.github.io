@@ -1,0 +1,52 @@
+---
+title: "Tutorial One Groups"
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE, error=FALSE}
+library(tidyverse)
+labs = read.csv('labs.csv')
+labs$Name = as.character(labs$Name)
+
+set.seed(2)
+
+labs %>% filter(Lab=='1:00 pm') %>% 
+  cbind(random=sample(1:20, 20)) %>% 
+  plyr::arrange(random) %>% 
+  cbind(group=rep(c(1:5), rep(4, 5))) %>%
+  select(Name, STUDENT_CODE, group) -> lab1
+
+labs %>% filter(Lab=='2:30 pm') %>% 
+  cbind(random=sample(1:20, 20)) %>% 
+  plyr::arrange(random) %>% 
+  cbind(group=rep(c(1:5), rep(4, 5))) %>%
+  select(Name, STUDENT_CODE, group) -> lab2
+
+getGroup = function(data){
+  out = rep("a", 8)
+  for(i in 1:4){
+    out[2*i - 1] = data$Name[i]
+    out[2*i] = data$STUDENT_CODE[i]
+  }
+  out
+}
+
+for(i in 1:5){
+  assign(paste0("Group", i), getGroup(filter(lab1, group==i)))
+}
+GroupL1 = data.frame(`Group 1` = Group1, `Group 2` = Group2, `Group 3` = Group3, `Group 4` = Group4, `Group 5` = Group5, check.names=FALSE)
+for(i in 1:5){
+  assign(paste0("Group", i), getGroup(filter(lab2, group==i)))
+}
+GroupL2 = data.frame(`Group 1` = Group1, `Group 2` = Group2, `Group 3` = Group3, `Group 4` = Group4, `Group 5` = Group5, check.names=FALSE)
+```
+
+### Lab 1: Wednesday 1:00 pm
+```{r, echo=FALSE, message=FALSE, error=FALSE}
+knitr::kable(GroupL1)
+```
+
+### Lab 2: Wednesday 2:30 pm
+```{r, echo=FALSE, message=FALSE, error=FALSE}
+knitr::kable(GroupL2)
+```
